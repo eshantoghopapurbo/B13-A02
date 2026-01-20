@@ -84,7 +84,7 @@ body {
 .banner-section {
     width: full;
     height: 760px;
-   background-image:url(/assets/hero-bg.png);
+    background-image: url(/assets/hero-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -204,7 +204,8 @@ body {
 .dashbord-div {
     text-align: center;
 }
-.TechWave{
+
+.TechWave {
     display: grid;
     grid-template-columns: ;
 }
@@ -213,53 +214,146 @@ body {
 
 /* featured episodes style */
 
-.featured-container{
+.featured-container {
     margin-top: 120px;
+    margin-bottom: 120px;
+
 }
 
 
 
 .featured-container h1 {
-text-align: center;
-font: bold;
-font-size: 48px;
-color: #FFFFFF;
-margin-bottom: 40px;
-}
-
- .container {
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     align-items: center;
-     margin-left: 200px;
-     margin-right: 200px;
-
-    
-    
-}
-
-.container h3{
-    font-size: 22px;
-    /* font-weight: 400px; */
-color: #FFFFFF;
-}
-
-.container p{
-    font-size: 16px;
+    text-align: center;
+    font: bold;
+    font-size: 48px;
     color: #FFFFFF;
-    font-weight: 400;
+    margin-bottom: 40px;
+
 }
-.container img {
-    color: white;
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    gap: 30px;   
 }
-.clock{
-    display: flex;
-    gap: 4px;
+
+
+
+.container-box{
+    border-radius: 24px;
+        background-color: #250D44;
 }
-.min{
-    color: #00FF88;
+
+.container-box iframe{
+   width: 380px;
+   height: 214px;
+   border-radius: 20px;
    
 }
 
+
+
+.container h3 {
+    font-size: 22px;
+    color: #FFFFFF;
+    padding: 24px;
+
+}
+
+.container-box p {
+    font-size: 16px;
+    color: gray;
+    padding: 24px;
+}
+
+.container img {
+    color: white;
+}
+
+.clock {
+    display: flex;
+    font-size: 20px;
+    gap: 4px;
+    padding: 24px;
+
+}
+
+.min {
+    color: #00FF88;
+
+}
+
+
+/* meet the host desing */
+.host-container {
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 15px;
+    background-color: #533C72;
+}
+
+.container {
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+
+}
+
+.host-desingh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: white;
+    width: 1350px;
+    height: 280px;
+    
+
+}
+
+.host-text {
+    display: grid;
+
+}
+
+.social-link {
+    width: 184px;
+    height: 40px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 20px;
+
+}
+
+.alex{
+    margin-bottom: 9px;
+    font-size: 30px;
+}
+
+
+
+
+
 /* navber responsive */
-@media screen and(max-width:576px) {}
+@media (max-width: 576px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    gap: 30px;   
+}
+
+.container-box iframe{
+   width: 565px;
+   height: 369px;
+   border-radius: 20px;
+}
+
+}
